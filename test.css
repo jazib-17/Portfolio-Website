@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(211, 34, 34);
+}
+.header{
+    position: absolute;
+    left:50%;
+    width:95%;
+    height:90px;
+    background-color: gray;
+    align-content: center;
+    float: center;
+    text-align: center;
+    -webkit-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 75%;
+}
