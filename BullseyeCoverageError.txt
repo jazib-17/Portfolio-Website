@@ -1,1 +1,0 @@
-BullseyeCoverage 8.13.13 error 15: Cannot find C:\WINDOWS\SysWOW64/test.cov. COVFILE is not set, errno=2. Executable is C:\WINDOWS\Installer\MSI5A38.tmp
