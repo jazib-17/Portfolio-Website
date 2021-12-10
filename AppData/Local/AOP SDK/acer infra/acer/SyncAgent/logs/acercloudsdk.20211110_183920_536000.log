@@ -1,0 +1,15 @@
+write log to C:\Users\Family\AppData\Local\AOP SDK\acer infra\acer\SyncAgent\logs\acercloudsdk.20211110_183920_536000.log
+18:39:20:535 | BackgroundAgent_by_UPMonitor.dll | INFO | Clearfi::Reset | 108816 | reset _pFileManager
+18:39:20:536 | BackgroundAgent_by_UPMonitor.dll | INFO | Clearfi::Reset | 108816 | Stop Controller before delelte Suppliers
+18:39:20:536 | BackgroundAgent_by_UPMonitor.dll | INFO | Clearfi::Reset | 108816 | reset _ServiceSuppliers
+18:39:20:536 | BackgroundAgent_by_UPMonitor.dll | INFO | Clearfi::Reset | 108816 | reset _pTagEditController
+18:39:20:536 | BackgroundAgent_by_UPMonitor.dll | INFO | Clearfi::Reset | 108816 | reset _pMetadataController
+18:39:20:571 | BackgroundAgent_by_UPMonitor.dll | INFO | Clearfi::Reset | 108816 | reset _pAcerlibAgent
+18:39:20:571 | BackgroundAgent_by_UPMonitor.dll | INFO | Clearfi::Reset | 108816 | reset _pCloudAgent2
+18:39:20:571 | BackgroundAgent_by_UPMonitor.dll | INFO | Clearfi::Reset | 108816 | reset _pPlayListAgent2
+18:39:20:571 | BackgroundAgent_by_UPMonitor.dll | INFO | Clearfi::Reset | 108816 | reset _pCameraRollAgent
+18:39:20:571 | BackgroundAgent_by_UPMonitor.dll | INFO | Clearfi::Reset | 108816 | reset _pLocalAgent
+18:39:20:571 | BackgroundAgent_by_UPMonitor.dll | INFO | Clearfi::Reset | 108816 | reset _pDLNAAgent
+18:39:20:571 | BackgroundAgent_by_UPMonitor.dll | INFO | Clearfi::Reset | 108816 | reset _pMessageController
+18:39:20:573 | BackgroundAgent_by_UPMonitor.dll | START |108816 | AOP Framework SDK version [3.10.7.2000] parterId [acer]
+18:39:20:573 | BackgroundAgent_by_UPMonitor.dll | INFO | ExceptionHandler | 108816 | error [-50002]

@@ -1,0 +1,25 @@
+﻿12:33:22.811 => (172824) -------------------------------------
+12:33:23.063 => (172824) Acer Portal Start! Version:1.0.1.7
+12:33:23.063 => (172824) -------------------------------------
+12:33:24.406 => (172824) [#ERR] Get user name failed: -9055 sleep 0.5s to retry
+12:33:26.089 => (172824) [#ERR] Get user name failed: -9055 sleep 0.5s to retry
+12:33:27.792 => (172824) [#ERR] Get user name failed: -9055 sleep 0.5s to retry
+12:33:29.495 => (172824) [#ERR] Get user name failed: -9055 sleep 0.5s to retry
+12:33:31.155 => (172824) [#ERR] Get user name failed: -9055 sleep 0.5s to retry
+12:33:32.795 => (172824) [#ERR] Get user name failed: -9055 sleep 0.5s to retry
+12:33:34.426 => (172824) [#ERR] Get user name failed: -9055 sleep 0.5s to retry
+12:33:36.041 => (172824) [#ERR] Get user name failed: -9055 sleep 0.5s to retry
+12:33:37.688 => (172824) [#ERR] Get user name failed: -9055 sleep 0.5s to retry
+12:33:39.331 => (172824) [#ERR] Get user name failed: -9055 stop to retry
+12:33:52.251 => (172824) [#ERR] Get user name failed: System.Exception: -9055
+   at CcdManager.LoadSettings()
+12:33:54.482 => (172824) [#ERR] Get player id failed: -9055 sleep 0.5s to retry
+12:33:56.135 => (172824) [#ERR] Get player id failed: -9055 sleep 0.5s to retry
+12:33:57.775 => (172824) [#ERR] Get player id failed: -9055 sleep 0.5s to retry
+12:33:59.407 => (172824) [#ERR] Get player id failed: -9055 sleep 0.5s to retry
+12:34:01.187 => (172824) [#ERR] Get player id failed: -9055 sleep 0.5s to retry
+12:34:02.827 => (172824) [#ERR] Get player id failed: -9055 sleep 0.5s to retry
+12:34:04.511 => (172824) [#ERR] Get player id failed: -9055 sleep 0.5s to retry
+12:34:06.169 => (172824) [#ERR] Get player id failed: -9055 sleep 0.5s to retry
+12:34:07.823 => (172824) [#ERR] Get player id failed: -9055 sleep 0.5s to retry
+12:34:09.498 => (172824) [#ERR] Get player id failed: -9055 stop to retry
