@@ -110,7 +110,7 @@ a.photo:hover{
   text-decoration:none !important;
   color:rgb(170, 112, 218);
   pointer-events: none;
-  -webkit-text-stroke: 1px black;
+  -webkit-text-stroke: 0.5px white;
 }
 .aboutlink{
   position: absolute;
@@ -125,5 +125,5 @@ a.photo:hover{
   text-decoration:none !important;
   color:rgb(170, 112, 218);
   pointer-events: none;
-  -webkit-text-stroke: 1px black;
+  -webkit-text-stroke: 0.5px white;
 }
