@@ -237,9 +237,9 @@ body{
   font-family: 'Cairo', sans-serif;
   font-weight:bold;
   font-size:2.75vw;
-  line-height: 110%;
+  line-height: 115%;
   color:rgb(84, 125, 236);
-  transform: translate(10%,43%);
+  transform: translate(10%,40%);
   pointer-events: none;
 
 }
@@ -288,13 +288,13 @@ body{
 
 .intereststext{
   position: absolute;
-  width:76%;
+  width:88%;
   font-family: 'Cairo', sans-serif;
   font-weight:bold;
   font-size:2.75vw;
-  line-height: 110%;
+  line-height: 115%;
   color:rgb(27, 143, 12);
-  transform: translate(15%,333%);
+  transform: translate(7%,23%);
   pointer-events: none;
 
 }
@@ -306,7 +306,7 @@ body{
   font-size:4vw;
   line-height: 100%;
   color:rgb(13, 189, 80);
-  transform: translate(30%,130%);
+  transform: translate(30%,100%);
   pointer-events: none;
 
 }
