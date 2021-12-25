@@ -122,15 +122,15 @@ body{
 }
 .linkedin {
   position:absolute;
-  width:50px;
-  height:50px;
-  margin:0 auto;
-  transform:translate(1305%,1105%);
-
+  width:100%;
+  text-align: center;
 }
 
 
 .linkedin img {
+  width:3.75%;
+  height:auto;
+  transform:translate(-50%,1075%);
   position:absolute;
   -webkit-transition: opacity 0.5s ease-in-out;
   -moz-transition: opacity 0.5s ease-in-out;
@@ -153,7 +153,6 @@ body{
 .github {
   position:absolute;
   width:100%;
-  transform:translate(30%,50%);
 
 }
 
@@ -161,6 +160,7 @@ body{
 .github img {
   width:3.75%;
   height:auto;
+  transform:translate(1110%,1120%);
   position:absolute;
   -webkit-transition: opacity 0.5s ease-in-out;
   -moz-transition: opacity 0.5s ease-in-out;
@@ -173,15 +173,14 @@ body{
 
 .mail {
   position:absolute;
-  width:60px;
-  height:40px;
-  margin:0 auto;
-  transform:translate(1230%,1390%);
-
+  width:100%;
 }
 
 
 .mail img {
+  width:4.5%;
+  height:auto;
+  transform:translate(1210%,1390%);
   position:absolute;
   -webkit-transition: opacity 0.5s ease-in-out;
   -moz-transition: opacity 0.5s ease-in-out;
@@ -199,11 +198,10 @@ body{
   position:absolute;
 }
 .aboutme{
-  position:relative;
-  left:0%;
-  top:100%;
+  position:absolute;
   width:100%;
   height:50%;
+  transform: translate(0%,225%);
 }
 
 
@@ -227,23 +225,21 @@ body{
 
 .queensphoto img{
   width:105%;
-  margin: 0px;
-  padding: 0px;
   position:absolute;
-  border-width: 5px;
+  border-width: 1vw;
   border-style: solid;
   border-image: linear-gradient(to right, rgb(84, 125, 236), rgb(182, 103, 221)) 1;
 }
 
 .aboutmetext{
   position: absolute;
-  width:40%;
+  width:35%;
   font-family: 'Cairo', sans-serif;
   font-weight:bold;
-  font-size:40px;
+  font-size:3vw;
   line-height: 100%;
   color:rgb(84, 125, 236);
-  transform: translate(10%,300%);
+  transform: translate(20%,70%);
   pointer-events: none;
 
 }
@@ -252,8 +248,13 @@ body{
 .textplacer{
   position:absolute;
   left:0%;
-  width:10%;
-  height:100%;
-  background:url(images/Student\ ID\ Pic.jpg);
+  width:40%;
+  height:175%;
+  background-color: rgb(243, 243, 243);
+  transform: translate(10%,12%);
+  border-width: 0.5vw;
+  border-style: solid;
+  border-color: darkslategray;
+  opacity:90%;
 
 }
