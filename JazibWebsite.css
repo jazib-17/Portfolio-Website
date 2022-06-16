@@ -343,6 +343,14 @@ body{
 .nrevea.active {
   opacity: 1;
 }
+.revea {
+  position: relative;
+  opacity: 0;
+}
+
+.revea.active {
+  opacity: 1;
+}
 
 .active.fade-bottom {
   animation: fade-bottom 1s ease-in;
@@ -386,4 +394,58 @@ body{
 }
 html{
   scroll-behavior: smooth;
+}
+
+.projects{
+  position:absolute;
+  width:100%;
+  transform: translate(0%,425%);
+}
+
+.prophoto img{
+  width:105%;
+  position:absolute;
+  border-width: 1vw;
+  border-style: solid;
+  border-image: linear-gradient(to right, rgb(84, 125, 236), rgb(182, 103, 221)) 1;
+  transform: translate(-5%,252.5%);
+}
+
+.projectstext{
+  position: absolute;
+  width:88%;
+  font-family: 'Cairo', sans-serif;
+  font-weight:bold;
+  font-size:2.75vw;
+  line-height: 115%;
+  color:rgb(144, 8, 179);
+  transform: translate(7%,20%);
+  pointer-events: none;
+
+}
+.projectstexthead{
+  position: absolute;
+  width:35%;
+  font-family: 'Cairo', sans-serif;
+  font-weight:bold;
+  font-size:4vw;
+  line-height: 100%;
+  color:rgb(79, 2, 99);
+  transform: translate(30%,100%);
+  pointer-events: none;
+
+}
+
+.text3-container{
+  position:absolute;
+  left:0%;
+  width:40%;
+  height:45vw;
+  background-color: rgb(243, 243, 243);
+  transform: translate(10%,382%);
+  border-width: 0.5vw;
+  border-style: solid;
+  border-color: dimgray;
+  opacity:90%;
+  border-radius: 5%;
 }

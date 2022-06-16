@@ -16,6 +16,7 @@ function reveal(name, elementVisible) {
 window.addEventListener("scroll", function(){
   reveal(".reveal", 1050);
   reveal(".nrevea", 1950);
+  reveal(".revea", 2850);
 });
 
 reveal(".reveal", 1050);
