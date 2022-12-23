@@ -6,8 +6,9 @@ function reveal(name, elementVisible) {
     var windowWidth = window.innerWidth;
     var ratio = windowHeight/windowWidth ;
     var elementTop = reveals[i].getBoundingClientRect().top;
+    var distanceToTop = window.pageYOffset;
 
-    if (elementTop < ((ratio) * 100 - (elementVisible/ratio))) {
+    if (distanceToTop > (elementVisible * ratio)) {
       reveals[i].classList.add("active");
     } else {
       reveals[i].classList.remove("active");
@@ -16,13 +17,10 @@ function reveal(name, elementVisible) {
 }
 
 window.addEventListener("scroll", function(){
-  reveal(".reveal", 330);
-  reveal(".nrevea", 690);
-  reveal(".revea", 1050);
+  reveal(".reveal", 830);
+  reveal(".nrevea", 2520);
+  reveal(".revea", 4350);
 });
-
-reveal(".reveal", 700);
-reveal(".nrevea", 1450);
 
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
