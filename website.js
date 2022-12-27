@@ -8,7 +8,7 @@ function reveal(name, elementVisible) {
     var elementTop = reveals[i].getBoundingClientRect().top;
     var distanceToTop = window.pageYOffset;
 
-    if (distanceToTop > (elementVisible * ratio)) {
+    if (distanceToTop > (elementVisible * ratio) || ratio>0.8 || ratio<0.4) {
       reveals[i].classList.add("active");
     } else {
       reveals[i].classList.remove("active");

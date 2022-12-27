@@ -91,7 +91,6 @@ body{
 }
 .photo3 img{
   width:100%; 
-  height: 35%;
   border-width: 5px;
   border-style: solid;
   border-image: linear-gradient(to bottom, rgb(84, 125, 236), rgb(182, 103, 221)) 1;
@@ -315,6 +314,7 @@ body{
 .text2-container{
   position:absolute;
   left:0%;
+  top:0%;
   width:30%;
   height:40vw;
   background-color: rgb(243, 243, 243);
