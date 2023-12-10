@@ -25,3 +25,7 @@ window.addEventListener("scroll", function(){
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 }
+
+setTimeout(function() {
+  document.getElementById('loading-screen').style.display = 'none';
+}, 2000);

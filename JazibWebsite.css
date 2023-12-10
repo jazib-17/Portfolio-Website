@@ -290,7 +290,7 @@ body{
   width:88%;
   font-family: 'Cairo', sans-serif;
   font-weight:bold;
-  font-size:2.75vw;
+  font-size:2.3vw;
   line-height: 115%;
   color:rgb(13, 189, 80);
   transform: translate(7%,23%);
@@ -416,11 +416,10 @@ html{
   width:88%;
   font-family: 'Cairo', sans-serif;
   font-weight:bold;
-  font-size:2.75vw;
+  font-size:2vw;
   line-height: 115%;
   color:rgb(144, 8, 179);
   transform: translate(7%,20%);
-  pointer-events: none;
 
 }
 .projectstexthead{
@@ -448,4 +447,36 @@ html{
   border-color: dimgray;
   opacity:90%;
   border-radius: 5%;
+}
+
+#loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(47,54, 63);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+#loading-circle {
+  width: 20vw; /* 20% of the viewport width */
+  height: 20vw; /* 20% of the viewport height */
+  border-radius: 50%;
+  background: url('images/logo.webp') center center no-repeat;
+  background-size: cover;
+  color: transparent;
+  animation: colorChange 3s infinite alternate;
+}
+
+@keyframes colorChange {
+  0% {
+      transform: scale(1);
+  }
+  100% {
+      transform: scale(1.2);
+  }
 }
