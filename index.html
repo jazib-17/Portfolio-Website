@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jazibahmed.com</title>
+    <base href="">
+    <link rel="stylesheet" href="JazibWebsite.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+
+    <!-- ===== LOADING SCREEN ===== -->
+    <div id="loading-screen">
+        <div id="loading-circle"></div>
+    </div>
+
+    <!-- ===== STICKY NAV ===== -->
+    <nav class="navbar">
+        <span class="nav-brand">Jazib Ahmed</span>
+        <div class="nav-links">
+            <a href="#about-me">About</a>
+            <a href="#interests">Interests</a>
+            <a href="#projects">Projects</a>
+        </div>
+        <div class="nav-social">
+            <a href="https://www.linkedin.com/in/jazib-ahmed-48a761213/" class="nav-icon-wrap" title="LinkedIn">
+                <img class="icon-back" src="images/lkafter.png" alt="LinkedIn">
+                <img class="icon-front" src="images/lkbefore.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/jazib-17" class="nav-icon-wrap" title="GitHub">
+                <img class="icon-back" src="images/githublogored.png" alt="GitHub">
+                <img class="icon-front" src="images/githublogocolorful.png" alt="GitHub">
+            </a>
+            <a href="mailto:mail.jazib7537@gmail.com" class="nav-icon-wrap" title="Email">
+                <img class="icon-back" src="images/maillogored.png" alt="Email">
+                <img class="icon-front" src="images/maillogocolorful.png" alt="Email">
+            </a>
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+        <div class="hero-bg">
+            <img src="images/background.webp" alt="Background">
+        </div>
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <p class="hero-eyebrow">Queen's University CS Graduate · Greater Toronto Area</p>
+            <h1 class="hero-title">Jazib Ahmed</h1>
+            <p class="hero-subtitle">Computing · Mathematics · Analytics</p>
+
+            <div class="hero-cards">
+                <a class="hero-card card-landscape" href="#interests">
+                    <div class="hero-card-inner">
+                        <img
+                            src="images/w112.jpg"
+                            onmouseover="this.src='https://media.giphy.com/media/LqyWUxGnDbLaxpngr5/giphy.gif'"
+                            onmouseout="this.src='images/w112.jpg'"
+                            alt="Interests">
+                    </div>
+                    <span class="hero-card-label">Interests</span>
+                </a>
+                <a class="hero-card card-portrait" href="#about-me">
+                    <div class="hero-card-inner">
+                        <img src="images/Own Pic.webp" alt="About Me">
+                    </div>
+                    <span class="hero-card-label">About Me</span>
+                </a>
+                <a class="hero-card card-landscape" href="#projects">
+                    <div class="hero-card-inner">
+                        <img
+                            src="images/projects.jpg"
+                            onmouseover="this.src='images/projects.gif'"
+                            onmouseout="this.src='images/projects.jpg'"
+                            alt="Projects">
+                    </div>
+                    <span class="hero-card-label">Projects</span>
+                </a>
+            </div>
+
+            <div class="hero-social">
+                <a href="https://www.linkedin.com/in/jazib-ahmed-48a761213/" class="social-pill">LinkedIn</a>
+                <a href="https://github.com/jazib-17" class="social-pill">GitHub</a>
+                <a href="mailto:mail.jazib7537@gmail.com" class="social-pill">Email</a>
+            </div>
+        </div>
+
+        <div class="scroll-hint">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT ME ===== -->
+    <section class="content-section about-section">
+        <div class="section-image reveal fade-left">
+            <img id="about-me" src="images/queens.webp" alt="Queen's University">
+        </div>
+        <div class="section-card reveal fade-right">
+            <h2 class="section-heading">About Me</h2>
+            <p class="section-text">
+                I'm a Queen's University graduate in Computing, Mathematics &amp; Analytics. I reside in the
+                Greater Toronto Area, Canada, and am actively seeking new opportunities where I can apply
+                my technical skills and passion for data-driven problem solving.
+            </p>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ===== INTERESTS ===== -->
+    <section class="content-section interests-section">
+        <div class="section-card nrevea fade-right">
+            <h2 class="section-heading">Interests</h2>
+            <ul class="section-list">
+                <li>
+                    <span class="list-marker">▸</span>
+                    <span><strong>Cars / F1:</strong> I run an F1 data analysis Instagram page, posting race insights built with Python, FastF1, and Matplotlib. Photo taken at the 2023 Canadian Grand Prix.</span>
+                </li>
+                <li>
+                    <span class="list-marker">▸</span>
+                    <span>Photography and Cinematography</span>
+                </li>
+                <li>
+                    <span class="list-marker">▸</span>
+                    <span><strong>Data Analysis:</strong> Certified in Tableau, R, Excel, and SQL</span>
+                </li>
+                <li>
+                    <span class="list-marker">▸</span>
+                    <span>Music</span>
+                </li>
+                <li>
+                    <span class="list-marker">▸</span>
+                    <span>Snooker</span>
+                </li>
+            </ul>
+        </div>
+        <div class="image-masonry nrevea fade-left">
+            <img id="interests" src="images/f1.webp" alt="Canadian Grand Prix 2023">
+            <img src="images/Interests1.webp" alt="Interest">
+            <img src="images/interests2.webp" alt="Interest">
+            <img src="images/interests3.webp" alt="Interest">
+            <img src="images/Interests4.jpg"  alt="Interest">
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="content-section projects-section">
+        <div class="image-masonry revea fade-left">
+            <img id = "projects" src="images/project1.gif" alt="Project">
+            <img src="images/project2.png" alt="Project">
+            <img src="images/project3.png" alt="Project">
+            <img src="images/project4.png" alt="Project">
+        </div>
+        <div class="section-card revea fade-right">
+            <h2 class="section-heading">Projects</h2>
+            <ul class="section-list">
+                <li>
+                    <span class="list-marker">◆</span>
+                    <span>
+                        <a href="https://github.com/jazib-17" target="_blank">F1 Data Analysis Instagram Page</a>:
+                        Python, FastF1, Matplotlib. Custom tools analyzing race pace, qualifying performance, and driver comparisons; reusable scripts published on GitHub.
+                    </span>
+                </li>
+                <li>
+                    <span class="list-marker">◆</span>
+                    <span>
+                        <a href="https://github.com/jazib-17" target="_blank">NYC Taxi Data Pipeline</a>:
+                        PySpark, SQL, Python, R. End-to-end pipeline processing millions of taxi trips; tuned XGBoost and regression models achieving a best RMSE of 3.53.
+                    </span>
+                </li>
+                <li>
+                    <span class="list-marker">◆</span>
+                    <span>
+                        <a href="https://github.com/qfsae/zenith" target="_blank">FSAE Steering Wheel Software</a>:
+                        C++. Real-time graphical data display using circular queues, built for the Queen's Formula SAE team.
+                    </span>
+                </li>
+                <li>
+                    <span class="list-marker">◆</span>
+                    <span>
+                        <a href="https://play.google.com/store/apps/details?id=o.r.organize" target="_blank">Android App</a>:
+                        Java. Built an Android game with a small team.
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+        <p>© 2026 Jazib Ahmed · Greater Toronto Area</p>
+    </footer>
+
+    <script src="website.js"></script>
+</body>
+</html>

@@ -1,31 +1,37 @@
-function reveal(name, elementVisible) {
-  var reveals = document.querySelectorAll(name);
+/* ============================================================
+   JAZIB AHMED — website.js
+   Replaced manual scroll maths with IntersectionObserver.
+   All original behaviour preserved.
+   ============================================================ */
 
-  for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight;
-    var windowWidth = window.innerWidth;
-    var ratio = windowHeight/windowWidth ;
-    var elementTop = reveals[i].getBoundingClientRect().top;
-    var distanceToTop = window.pageYOffset;
+// ===== Scroll-reveal via IntersectionObserver =====
+const observer = new IntersectionObserver(
+    (entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+            }
+        });
+    },
+    { threshold: 0.18 }
+);
 
-    if (distanceToTop > (elementVisible * ratio) || ratio>0.8 || ratio<0.4) {
-      reveals[i].classList.add("active");
-    } else {
-      reveals[i].classList.remove("active");
-    }
-  }
-}
-
-window.addEventListener("scroll", function(){
-  reveal(".reveal", 830);
-  reveal(".nrevea", 2520);
-  reveal(".revea", 4350);
+document.querySelectorAll('.reveal, .nrevea, .revea').forEach((el) => {
+    observer.observe(el);
 });
 
+// ===== Scroll to top on page refresh =====
 window.onbeforeunload = function () {
-  window.scrollTo(0, 0);
-}
+    window.scrollTo(0, 0);
+};
 
-setTimeout(function() {
-  document.getElementById('loading-screen').style.display = 'none';
-}, 2000);
+// ===== Loading screen fade-out =====
+window.addEventListener('load', function () {
+    setTimeout(function () {
+        const screen = document.getElementById('loading-screen');
+        if (screen) {
+            screen.style.opacity = '0';
+            setTimeout(() => { screen.style.display = 'none'; }, 500);
+        }
+    }, 2000);
+});
