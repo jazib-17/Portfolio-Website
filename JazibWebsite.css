@@ -87,6 +87,7 @@ a { text-decoration: none; color: inherit; }
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;           /* FIX: prevents horizontal overflow */
     padding: 1rem 3rem;
     backdrop-filter: blur(22px);
     -webkit-backdrop-filter: blur(22px);
@@ -121,11 +122,12 @@ a { text-decoration: none; color: inherit; }
 }
 .nav-links a:hover { color: var(--red); }
 
-/* nav icon hover swap (same mechanic as original) */
+/* nav icon hover swap */
 .nav-social {
     display: flex;
     gap: 1rem;
     align-items: center;
+    flex-shrink: 0;            /* FIX: icons never get squashed */
 }
 
 .nav-icon-wrap {
@@ -198,6 +200,7 @@ a { text-decoration: none; color: inherit; }
     padding: 7rem 2rem 3rem;
     text-align: center;
     animation: fade-up 1s ease-out both;
+    width: 100%;               /* FIX: keeps content from overflowing */
 }
 
 .hero-eyebrow {
@@ -421,7 +424,6 @@ a { text-decoration: none; color: inherit; }
     width: 100%;
     display: block;
     border-radius: calc(var(--card-radius) + var(--img-border));
-    /* gradient border */
     padding: var(--img-border);
     background: var(--grad-main);
     object-fit: cover;
@@ -526,9 +528,8 @@ a { text-decoration: none; color: inherit; }
 /* ============================================================
    SCROLL REVEAL ANIMATIONS
    ============================================================ */
-.reveal,
-.nrevea,
-.revea {
+/* FIX: all reveal elements now use .reveal only */
+.reveal {
     opacity: 0;
     transition: opacity 0.8s ease, transform 0.8s ease;
 }
@@ -536,9 +537,7 @@ a { text-decoration: none; color: inherit; }
 .fade-left  { transform: translateX(-48px); }
 .fade-right { transform: translateX( 48px); }
 
-.reveal.active,
-.nrevea.active,
-.revea.active {
+.reveal.active {
     opacity: 1;
     transform: translateX(0);
 }
@@ -575,7 +574,6 @@ a { text-decoration: none; color: inherit; }
     background: var(--grad-main);
     box-shadow: 0 16px 50px rgba(84, 125, 236, 0.15);
     overflow: hidden;
-    /* fixed height so varying image dimensions don't jump around */
     height: clamp(260px, 36vw, 520px);
 }
 
@@ -590,9 +588,9 @@ a { text-decoration: none; color: inherit; }
     flex-shrink: 0;
     width: 100%;
     height: 100%;
-    object-fit: contain;        /* shows full image, no crop, no stretch */
+    object-fit: contain;
     display: block;
-    background: #0b0d13;        /* letterbox colour matches site bg */
+    background: #0b0d13;
     border-radius: calc(var(--card-radius) - 2px);
 }
 
@@ -658,10 +656,8 @@ a { text-decoration: none; color: inherit; }
 
 
 /* ============================================================
-   RESPONSIVE — mobile-first fixes
+   RESPONSIVE — tablet / small desktop
    ============================================================ */
-
-/* ---- tablet / small desktop ---- */
 @media (max-width: 900px) {
     /* navbar */
     .navbar     { padding: 0.75rem 1.25rem; }
@@ -683,7 +679,7 @@ a { text-decoration: none; color: inherit; }
     .hero-content { padding: 5.5rem 1.5rem 2.5rem; gap: 1rem; }
     .hero-eyebrow { font-size: 0.7rem; }
 
-    /* hero cards: wrap + shrink */
+    /* hero cards */
     .hero-cards {
         flex-wrap: wrap;
         align-items: center;
@@ -698,23 +694,38 @@ a { text-decoration: none; color: inherit; }
     .img-carousel { height: clamp(220px, 55vw, 360px); }
 }
 
-/* ---- phone ---- */
+
+/* ============================================================
+   RESPONSIVE — phone  (≤ 500px)
+   ============================================================ */
 @media (max-width: 500px) {
-    .hero-title   { font-size: clamp(2.2rem, 11vw, 3.2rem); }
-    .hero-subtitle{ font-size: 0.8rem; }
-    .hero-eyebrow { font-size: 0.65rem; letter-spacing: 0.08em; }
-    .hero-content { padding: 5rem 1rem 2rem; }
+    .hero-title    { font-size: clamp(2.2rem, 11vw, 3.2rem); }
+    .hero-subtitle { font-size: 0.8rem; }
+    .hero-eyebrow  { font-size: 0.65rem; letter-spacing: 0.08em; }
+    .hero-content  { padding: 5rem 1rem 2rem; }
 
     /* stack portrait card above landscape pair */
     .hero-cards { flex-direction: column; align-items: center; }
-    .card-landscape { width: clamp(160px, 72vw, 280px); aspect-ratio: 16/9; }
-    .card-portrait  { width: clamp(130px, 55vw, 220px); }
+
+    /* FIX: more aggressive card sizing so nothing overflows */
+    .card-landscape { width: 90vw; aspect-ratio: 16/9; }
+    .card-portrait  { width: 65vw; }
 
     .section-card    { padding: 1.5rem 1.25rem; }
-    .content-section { padding: 2.5rem 4vw; gap: 1.5rem; }
 
+    /* FIX: tighter section gap on phone */
+    .content-section { padding: 2.5rem 4vw; gap: 1.25rem; }
+
+    /* FIX: smaller carousel height + cover images on phone */
     .img-carousel { height: clamp(200px, 65vw, 300px); }
+    .carousel-track img { object-fit: cover; }
+
+    /* FIX: smaller carousel buttons so they don't cover images */
+    .carousel-btn {
+        width: 2rem;
+        height: 2rem;
+        font-size: 1.5rem;
+    }
 
     .scroll-hint { display: none; }
 }
-

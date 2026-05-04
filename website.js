@@ -3,13 +3,14 @@
    ============================================================ */
 
 // ===== Scroll-reveal =====
+// FIX: unified to .reveal only — matches the HTML and CSS
 const observer = new IntersectionObserver(
     (entries) => {
         entries.forEach((e) => { if (e.isIntersecting) e.target.classList.add('active'); });
     },
     { threshold: 0.15 }
 );
-document.querySelectorAll('.reveal, .nrevea, .revea').forEach((el) => observer.observe(el));
+document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
 
 
 // ===== Carousel =====
@@ -57,6 +58,7 @@ window.onbeforeunload = () => window.scrollTo(0, 0);
 
 
 // ===== Loading screen fade-out =====
+// FIX: reduced from 2000ms to 500ms — 2s felt like a freeze on mobile
 window.addEventListener('load', () => {
     setTimeout(() => {
         const screen = document.getElementById('loading-screen');
@@ -64,5 +66,5 @@ window.addEventListener('load', () => {
             screen.style.opacity = '0';
             setTimeout(() => { screen.style.display = 'none'; }, 500);
         }
-    }, 2000);
+    }, 500);
 });
