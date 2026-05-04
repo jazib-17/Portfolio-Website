@@ -1,4 +1,4 @@
-# Jazib Ahmed — Personal Portfolio Website
+# Jazib Ahmed: Personal Portfolio Website
 
 <p align="center">
   <img src="images/logo.webp" alt="JA Logo" width="150"/>
